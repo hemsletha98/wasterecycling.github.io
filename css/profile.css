@@ -1,0 +1,107 @@
+
+.mainWrapper/*main wrapper*/
+{
+	background-color: #f2f2f2;
+	background-size: cover;
+	border-radius: 40px;
+	border:1px solid black;
+	height: 1000px;
+	width:100%;
+	/*flex stuff*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-between;
+}
+
+.subWrapper
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	height:80%;
+}
+.sellForm
+{
+	height: 300px;
+	border:1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	animation: apper 0.7s ease-in-out;
+}
+span
+{
+	text-shadow:0px 0px 0px;
+	
+}
+h2
+{
+	text-shadow:1px 1px 1px;
+	animation: apper 0.5s ease-in-out;
+}
+
+.profile
+{
+	width:150px;
+	height:100px;
+	display: flex;	
+
+}
+button
+{
+	background-color:white;
+	width:130px;
+	border:none;
+	height:30px;
+	transition: 0.3s;
+}
+button:hover
+{
+	transition: 0.3s;
+	margin: 5px;
+	background-color: gray;
+}
+.profileInsideDiv
+{
+	width:130px;
+	height:120px;
+	background: linear-gradient(white,gray);
+	box-shadow: 2px 2px 2px ;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	z-index: 20;
+
+	display: none;
+}
+.show
+{
+	display: flex;
+}
+.profileShowButton
+{
+	width:20px;
+	height: 20px;
+	background-color: white;
+	box-shadow: 4px 4px 1px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+
+}
+
+@keyframes apper
+{
+	0%
+	{
+		transform: scale(0);
+		transition: 0.5s;
+	}
+	100%
+	{
+		transform: scale(1);
+		transition: 0.5s;
+	}
+}

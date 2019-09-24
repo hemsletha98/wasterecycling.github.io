@@ -1,0 +1,33 @@
+.header
+{	
+
+	width:95%;
+	background:#f2f2f2;
+	border-top-left-radius: 30px;
+	border-bottom: 1px solid black;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	
+	/*flex stuff*/
+	display: flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.header>h1
+{
+	right:60px;
+	color:black;
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px black;
+}
+.navBar
+{
+	width:90%;
+	height:40px;
+	border-left:10px solid #0000e6;
+	border-right:10px solid #0000e6;
+	border-radius: 8px;
+	display: flex;
+	justify-content: flex-end;
+}

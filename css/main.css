@@ -1,0 +1,127 @@
+.mainWrapper
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.semiWrapper
+{
+	width:96%;
+	height:70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.abstract
+{
+	width:30%;
+	height: 70%;
+	background-color:white;
+	border-radius: 20px;
+	animation: apper 0.7s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.leftSide
+{
+	width:30%;
+	height:70%;
+	background: linear-gradient(gray,skyblue);
+	border-radius: 200px;
+	box-shadow: 2px 2px 1px;
+	border-left:5px solid orange;
+	border-right:5px solid orange;
+	transition: 0.5s;
+	/*background-image: url('../images/sell.png');*/
+	background-size: cover;
+	/*flex stuff*/
+	display: flex;
+	flex-direction: flex;
+	justify-content: center;
+	align-items: center;
+	animation: apper 0.3s ease-in-out;
+}
+.rightSide
+{
+	width:30%;
+	height:70%;
+	background: linear-gradient(gray,skyblue);
+	border-radius: 200px;
+	box-shadow: 2px 2px 1px;
+	border-left:5px solid orange;
+	border-right:5px solid orange;
+	animation: apper 0.5s ease-in-out;
+	transition: 0.5s;
+	/*background-image: url('../images/buy1.jpg');*/
+	background-size: cover;
+	/*flex stuff*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.rightSide:hover,.leftSide:hover
+{
+	transition: 0.5s;
+	border:0px solid black;
+	
+}
+.rightSide>button>h1,.leftSide>button>h1
+{
+	font-size: 300%;
+	text-shadow: 3px 3px 3px;
+	border:none;
+}
+input
+{
+	background-color: white;
+	width:170px;
+	height:25px;
+	border-radius: 20px;
+	box-shadow:1px 2px 1px;
+}
+button
+{
+	background-color: transparent;
+	border:none;
+}
+.navButton
+{
+	height:38px;
+	box-shadow: 2px 2px 1px;
+	transition:0.2s;
+	background:#ffb366;
+}
+.navButton:hover
+{
+	height:38px;
+	box-shadow: 4px 4px 1px;
+	margin:1px;
+	transition:0.2s;
+}
+button:hover
+{
+	box-shadow-shadow: 5px 5px 5px;
+}
+
+@keyframes apper
+{
+	0%
+	{
+		transform: scale(0);
+		transition: 0.5s;
+	}
+	100%
+	{
+		transform: scale(1);
+		transition: 0.5s;
+	}
+}
+
+.abstract
+{
+	background-color: #f2f2f2;
+}

@@ -1,0 +1,58 @@
+body
+{
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center
+
+}
+.wrapper
+{
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+
+	/*flexstuff*/
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.sellerDetails
+{
+	width: 96%;
+	
+	border-bottom:1px solid gray;
+	background:linear-gradient(white,gray);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	animation: apper 0.5s ease-in-out;
+
+}
+.productInformation
+{
+	/*background: linear-gradient(white,orangered);*/
+	/*filter: blur(1px);*/
+	/*filter:brightness(0.2);*/
+	/*filter:contrast(1.7);*/
+	/*filter:drop-shadow(2px 2px 2px black);*/
+	/*filter:grayscale(100%);*/
+	/*filter:hue-rotate(130deg);*/
+	/*filter:invert(70%);*/
+}
+
+@keyframes apper
+{
+	0%
+	{
+		transform: scale(0);
+		transition: 0.5s;
+	}
+	100%
+	{
+		transform: scale(1);
+		transition: 0.5s;
+	}
+}
